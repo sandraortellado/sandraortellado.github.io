@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Columns</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <ul class="nav navbar-nav">
+        <a class="nav-link" href="index.html"><li id='header'>
+            Latitude
+            </li></a>
+<div class="dropdown" aria-labelledby="dropdownMenu">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots
+  <span class="caret"></span>
+</button>
+<div class="dropdown-content">
+    <a href="maxtemp.html">Max Temperature</a>
+    <a href="humid.html">Humidity</a>
+    <a href="cloudiness.html">Cloudiness</a>
+    <a href="windiness.html">Windiness</a>
+  </div>
+        </div>
+          <a class="nav-link" href="comparison.html">
+          <li id="comparison"> 
+            Comparison
+              </li></a>
+          <a class="nav-link" href="data.html">
+          <li id="data">
+            Data
+              </li></a>
+      </ul>
+    </nav>
+    </div>
+<div id="container">
+    <div class="row">
+    <div class="col-sm-12 col-md-7" style="background-color:white">
+        <div class="box">
+            <h1>Cloudiness</h1>
+            <div class="plot">
+            <img src="Lat_Cloud.png" width=500 height=400 alt="City Lattitude vs. Max Temperature (03/26/19)">
+            </div>
+            <br/>
+            <p>There is no strong relationship between latitude and cloudiness. However, it is interesting to see that a strong band of cities sits at 0, 80, and 100% cloudiness.</p>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-4" style="background-color:white">
+        <div class="box">
+            <h1>Visualizations</h1>
+            <br/>
+            <a href="maxtemp.html"><img src="Lat_Temp.png" width=180 height=180 alt="City Lattitude vs. Max Temperature (03/26/19)"></a>
+            <a href="humid.html"><img src="Lat_Humid.png" width=180 height=180 alt="City Lattitude vs. Humidity (03/26/19)"></a>
+            <a href="cloudiness.html"><img src="Lat_Cloud.png" width=180 height=180 alt="City Lattitude vs. Cloudiness (03/26/19)"></a>
+            <a href="windiness.html"><img src="Lat_Wind.png" width=180 height=180 alt="City Lattitude vs. Max Temperature (03/26/19)"></a>
+        </div>
+    </div>
+    </div>
+</div>
+<div id="strip">&nbsp;</div>
+<div id="end">
+    &nbsp;
+    </div>
+    </body>

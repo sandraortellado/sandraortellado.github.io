@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Columns</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <ul class="nav navbar-nav">
+        <a class="nav-link" href="index.html"><li id='header'>
+            Latitude
+            </li></a>
+<div class="dropdown" aria-labelledby="dropdownMenu">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots
+  <span class="caret"></span>
+</button>
+<div class="dropdown-content">
+    <a href="maxtemp.html">Max Temperature</a>
+    <a href="humid.html">Humidity</a>
+    <a href="cloudiness.html">Cloudiness</a>
+    <a href="windiness.html">Windiness</a>
+  </div>
+        </div>
+          <a class="nav-link" href="comparison.html">
+          <li id="comparison"> 
+            Comparison
+              </li></a>
+          <a class="nav-link" href="data.html">
+          <li id="data">
+            Data
+              </li></a>
+      </ul>
+    </nav>
+    </div>
+<div id="container">
+        <div class="comparison_box" style="background-color:white;width:80%;margin:auto">
+            <h1>Comparison: Latitude vs X</h1>
+            <p>Click any plot to get an in-depth analysis</p>
+            <br/>
+    <div class="gallery">
+  <figure class="gallery__item gallery__item--1">
+        <h2 class="gallery_head">vs. Max Temperature </h2>
+        <a href="maxtemp.html"><img src="Lat_Temp.png" class="gallery__img" width=150 height=150 alt="Image 1">
+        </a></figure>
+  <figure class="gallery__item gallery__item--2">
+      <h2>vs. Humidity</h2>
+      <a href="humid.html"><img src="Lat_Humid.png" class="gallery__img" alt="Image 2">
+      </a></figure>
+  <figure class="gallery__item gallery__item--3">
+      <h2>vs. Cloudiness</h2>
+  <a href="cloudiness.html"><img src="Lat_Cloud.png" class="gallery__img" alt="Image 3">
+      </a></figure>                                                            
+  <figure class="gallery__item gallery__item--4">
+      <h2>vs. Wind Speed</h2>
+    <a href="windiness.html"><img src="Lat_Wind.png" class="gallery__img" alt="Image 4">
+  </a></figure>
+    </div>
+    </div>
+    </div>
+<div id="strip">&nbsp;</div>
+<div id="end">
+    &nbsp;
+    </div>
+</body>
